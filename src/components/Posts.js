@@ -20,7 +20,7 @@ export default function Posts(props){
           <td>{postP}</td>
           </tr>
         </table> :
-      <div className="">Click a user to see their posts</div>}
+      <div>Click a user to see their posts</div>}
       </div>
     
   )
