@@ -6,7 +6,7 @@ export default function Users(props){
   props.users.forEach(user => {
     tableRows.push(
       <tr>
-        <td id={user.id} onClick={event => props.changeSelected(event.target.id)}>{user.name}</td>
+        <td id={user.id} className={user.id==props.user ? "selected" : ""} onClick={event => props.changeSelected(event.target.id)}>{user.name}</td>
       </tr>
     )
   })

@@ -11,14 +11,17 @@ export default function Posts(props){
   })
   return(
     <div className="postsDiv">
-      <table>
-        <tr>
-          <th>Posts</th>
-        </tr>
-        <tr>
-        <td>{postP}</td>
-        </tr>
-      </table>
-    </div>
+    {selectedUser !== false ?
+        <table>
+          <tr>
+            <th>Posts</th>
+          </tr>
+          <tr>
+          <td>{postP}</td>
+          </tr>
+        </table> :
+      <div className="">Click a user to see their posts</div>}
+      </div>
+    
   )
 }

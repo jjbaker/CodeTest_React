@@ -23,8 +23,8 @@ export default function App() {
     <div>
       <Header />
       <div className="flex">
-        <Users users={users} changeSelected={setSelectedUser} />
-        {selectedUser !== false ? <Posts posts={posts} user={selectedUser} /> : <div className="centerV center">Click a user to see their posts</div>}
+        <Users users={users} changeSelected={setSelectedUser} user={selectedUser} />
+        <Posts posts={posts} user={selectedUser} />
       </div>
     </div>
   );

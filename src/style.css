@@ -20,7 +20,8 @@ p {
 }
 .postsDiv {
 	align-self: flex-start;
-	width: 100%
+	width: 100%;
+  height: 100%;
 }
 .postsDiv table {
 	width: 100%
